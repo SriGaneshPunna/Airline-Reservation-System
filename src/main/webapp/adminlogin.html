@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Login</title>
+<link rel="stylesheet" href:"adminlogin.css">
+</head>
+<style>
+/* adminlogin.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Background color for the body */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#login {
+  background-color: #ffffff; /* Background color for the login container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+h1 {
+  text-align: center;
+  color: #333; /* Text color for the heading */
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+form {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50; /* Green submit button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+</style>
+<body>
+<div id="login" align=center>
+<h1><b>ADMIN LOGIN</b></h1>
+<form action="adminvalidation.jsp" method=post>
+Enter email:<input type="text" name="email"><br><br>
+Enter password:<input type="password" name="password"><br><br>
+<input type="submit" value="login"><br>
+Don't have account<a href="adminregister.html">register here</a>
+</form>
+</div>
+</body>
+</html>

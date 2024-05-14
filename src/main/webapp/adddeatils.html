@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel=stylesheet href=flight.css>
+</head>
+<script>
+//Function to validate form inputs
+function validateForm() {
+    var id = document.forms["flightForm"]["id"].value;
+    var name = document.forms["flightForm"]["name"].value;
+    var from = document.forms["flightForm"]["from"].value;
+    var to = document.forms["flightForm"]["to"].value;
+    var type = document.forms["flightForm"]["type"].value;
+    var seats = document.forms["flightForm"]["seats"].value;
+    var price = document.forms["flightForm"]["price"].value;
+
+    // Check if any field is empty
+    if (id == "" || name == "" || from == "" || to == "" || type == "" || seats == "" || price == "") {
+        alert("All fields must be filled out");
+        return false;
+    }
+
+    // Check if seats and price are numeric
+    if (isNaN(seats) || isNaN(price)) {
+        alert("Seats and Price must be numeric");
+        return false;
+    }
+
+    return true; // Form is valid
+}
+
+
+</script>
+<body >
+<form name="flightForm"  method="post" onsubmit="return validateForm()">
+
+Enter Flight Id:<span></span><input type="text" placeholder="enter flight id" name="id"><br>
+Enter Flight Name:<input type="text" placeholder="enter flight Name" name="name"><br>
+Enter Flight From:<input type="text" placeholder="enter flight From" name="from"><br>
+Enter Flight to:<input type="text" placeholder="enter flight to" name="to"><br>
+Enter Flight type:<input type="text" placeholder="enter flight type" name="type"><br>
+Enter Flight seats:<input type="text" placeholder="enter flight seats" name="seats"><br>
+Enter Flight price:<input type="text" placeholder="enter flight price" name="price"><br>
+Enter username :<input type="text" placeholder="name" ><br>
+
+<input type="submit" placeholder="addflight" >
+</form>
+
+</body>
+</html>

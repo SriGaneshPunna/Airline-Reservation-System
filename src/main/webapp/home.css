@@ -1,0 +1,21 @@
+@charset "UTF-8";
+#navbar{
+    height:50px;
+    background-color:#00BFFF;
+    color:black;
+    display:flex;
+    text-align:center;
+    align-items:right;
+}
+a{
+    margin-right:10px;
+    padding:15px;
+    color:black;
+    
+}
+#bus{
+    Background-image:url(https://t4.ftcdn.net/jpg/02/69/47/51/360_F_269475198_k41qahrZ1j4RK1sarncMiFHpcmE2qllQ.jpg);
+    Background-height:100vh;
+    Background-width:100%;
+    
+}
