@@ -1,0 +1,40 @@
+@charset "ISO-8859-1";
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Background color for the body */
+    margin: 0;
+    padding: 0;
+  }
+
+  form {
+    background-color: #ffffff; /* Background color for the form */
+    max-width: 400px;
+    margin: 50px auto; /* Center the form horizontally */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    background-color: #4caf50; /* Green submit button */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
